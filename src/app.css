@@ -1,0 +1,167 @@
+/*******************************************************************
+  CSS стили для всего приложения
+*******************************************************************/
+
+body {
+  background-color: whitesmoke;
+  background-image: url(/public/cork-texture.jpg);
+  color: black;
+}
+
+button {
+  transition-duration: 0.4s;
+  background-color: transparent;
+  border: 2px solid;
+  margin: 2px;
+  border-radius: 4px;
+  box-shadow: 0px 1px 1px 0px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 19%);
+  color: black;
+  border-color: black;
+  word-wrap: break-word;
+}
+
+button:hover {
+  color: white;
+  background-color: black;
+}
+
+button:active {
+  transform: translateY(1px) translateX(1px);
+  box-shadow: none;
+}
+
+button:disabled {
+  opacity: 0.4;
+}
+
+.btn-green {
+  color: #4CAF50;
+  border-color: #4CAF50;
+}
+
+.btn-green:hover {
+  background-color: #4CAF50;
+}
+
+.btn-red {
+  color: red;
+  border-color: red;
+}
+
+.btn-red:hover {
+  background-color: red;
+}
+
+.btn-blue {
+  color: deepskyblue;
+  border-color: deepskyblue;
+}
+
+.btn-blue:hover {
+  background-color: deepskyblue;
+}
+
+.spacer {
+  margin: auto;
+}
+
+.mr {
+  margin-right: 10px;
+}
+
+.toBottom {
+  margin-top: auto;
+}
+
+.toTop {
+  margin-bottom: auto;
+}
+
+.toLeft {
+  margin-right: auto;
+}
+
+.toRight {
+  margin-left: auto;
+}
+
+.flat {
+  border: none;
+  box-shadow: none;
+}
+
+.bigIcon {
+  font-size: 24px;
+}
+
+.flex {
+  display: flex;
+}
+
+.input {
+  background-color: transparent;
+  border-style: none none solid none;
+  border-color: rgb(0, 0, 30);
+  border-width: 2px;
+  border-radius: 3px;
+  font-size: 1em;
+  margin: 10px;
+  transition-duration: 0.3s;
+  outline: none;
+  overflow-wrap: anywhere;
+  min-height: 1em;
+  width: -webkit-fill-available;
+}
+
+.input:hover {
+  border-color: rgb(0, 0, 255);
+}
+
+.input:focus {
+  border-color: orange;
+  border-style: none none solid none !important;
+  background-color: rgba(250,160,0,0.1);
+  /*color: white;*/
+  caret-color: red;
+}
+
+.paper {
+  background: #eee;
+  box-shadow: 0 0 10px black;
+  margin: 10px;
+  padding: 10px;
+}
+
+.papers {
+  background: #eee;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  margin: 15px auto 0;
+  padding: 24px;
+  position: relative;
+}
+.papers:before, .papers:after {
+  content: "";
+  height: 98%;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+.papers:before {
+  background: #fafafa;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+  left: -5px;
+  top: 4px;
+  transform: rotate(-2.5deg);
+}
+.papers:after {
+  background: #f6f6f6;
+  box-shadow: 0 0 3px rgba(0,0,0,0.2);
+  right: -3px;
+  top: 1px;
+  transform: rotate(1.4deg);
+}
+
+.noBorder {
+  border-style: none;
+}
+
