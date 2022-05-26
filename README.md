@@ -13,6 +13,9 @@
    Development server будет запущен на порту 8080 (http://localhost:8080/)
 2. `npm run build`  - команда для создания дистрибутива в папке dist
 
+>  Во время выполнения `npm run build`, может возникнуть ошибка:
+>  [webpack-cli] HookWebpackError: Only file and data URLs are supported by the default ESM loader ....
+>  Возникает она в случае если ваша версия NodeJS устаревшея. Обновление до последней версии NodeJS решает проблему
 
 ТЗ:
 --------------------------------------------------------------------------------------------
